@@ -21,4 +21,9 @@ public class SbRequestInfo {
 
     private String requestParam;
 
+    /**
+     * 请求开始时间
+     */
+    private long startTime;
+
 }
