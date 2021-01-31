@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 import java.util.Map;
 
-@SpringBootTest
+@SpringBootTest(classes = SbApplication.class)
 class SbApplicationTests {
 
 	@Test
@@ -23,6 +23,8 @@ class SbApplicationTests {
 		System.out.println(("----- selectAll method test ------"));
 		List<Map<String, Object>> userList = userMapper.selectList();
 		userList.forEach(System.out::println);
+		Map<String, Object> user = userMapper.selectById(1);
+		System.out.println(user);
 	}
 
 }

@@ -6,3 +6,5 @@ spring:
     url: jdbc:mysql://212.64.74.170:3306/sb
     username: root
     password: QWEasd@123
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

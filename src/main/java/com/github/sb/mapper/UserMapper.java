@@ -12,4 +12,6 @@ public interface UserMapper {
     @Select("select * from user")
     List<Map<String, Object>> selectList();
 
+    Map<String, Object> selectById(int id);
+
 }
