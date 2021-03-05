@@ -1,6 +1,6 @@
-package com.github.sb.config;
+package com.github.sb.web.conf;
 
-import com.github.sb.web.SbRequestInfoInteceptor;
+import com.github.sb.web.interceptor.SbRequestInfoInteceptor;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,11 +22,6 @@ public class SbWebConfig implements WebMvcConfigurer {
     @Override
     public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
 
-    }
-
-    @Bean
-    public ServletRegistrationBean<DispatcherServlet> dispatcherRegistration(DispatcherServlet dispatcherServlet) {
-        return new ServletRegistrationBean<>(dispatcherServlet,"/api/*");
     }
 
     @Bean

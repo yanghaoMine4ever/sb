@@ -1,4 +1,4 @@
-package com.github.sb.config.model;
+package com.github.sb.web.model;
 
 import lombok.Builder;
 import lombok.Data;

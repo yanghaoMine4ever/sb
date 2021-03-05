@@ -1,6 +1,6 @@
-package com.github.sb.web;
+package com.github.sb.web.interceptor;
 
-import com.github.sb.config.model.SbRequestInfo;
+import com.github.sb.web.model.SbRequestInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
